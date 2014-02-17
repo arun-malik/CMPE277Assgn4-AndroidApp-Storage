@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PersonalInfo" >
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/firstName">
+        <requestFocus />
+        </EditText>
+
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtAddress"
+        android:layout_below="@+id/edtFirstName"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/lastName"></EditText>
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtFirstName"
+        android:layout_below="@+id/edtLastName"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="3"
+        android:scrollbars="vertical"
+        android:hint="@string/address"/>
+
+    <EditText
+        android:id="@+id/edtCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtAddress"
+        android:layout_below="@+id/edtAddress"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="@string/creditCard">
+    </EditText>
+
+    
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSaveData"
+        android:layout_alignParentBottom="true"
+        android:background="#FF0000"
+        android:text="@string/close"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnSaveData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnReportData"
+        android:layout_alignLeft="@+id/edtCardNumber"
+        android:layout_marginBottom="11dp"
+        android:background="#3333FF"
+        android:gravity="center"
+        android:text="@string/saveData"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnReportData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnClose"
+        android:layout_alignLeft="@+id/btnClose"
+        android:layout_marginBottom="10dp"
+        android:background="#3333FF"
+        android:gravity="center"
+        android:text="@string/reportData"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnProcessData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSaveData"
+        android:layout_alignLeft="@+id/btnSaveData"
+        android:layout_marginBottom="11dp"
+        android:background="#00CC33"
+        android:gravity="center"
+        android:text="@string/processData"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
