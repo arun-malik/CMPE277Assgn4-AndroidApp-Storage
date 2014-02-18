@@ -9,4 +9,11 @@ This is CMPE 277 Assignment 4 to learn following things:
 4. How to display data in List View from  DB, Array, Shared Preferences using Adapters. 
 
 
+ScreenShots: 
+==============
+
+![Screen 1 ](Screenshot/screenshot1.png.png)
+
+
+
 
